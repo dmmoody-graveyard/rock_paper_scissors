@@ -1,13 +1,15 @@
 class String
-  define_method(:beats) do |opponents_choice|
+  define_method(:beats?) do |opponents_choice|
     if self == 'rock' && opponents_choice == 'scissors'
-      true
+      "You Win!"
     elsif self == 'scissors' && opponents_choice == 'paper'
-      true
+      "You Win!"
     elsif self == 'paper' && opponents_choice == 'rock'
-      true
+      "You Win!"
+    elsif self == opponents_choice
+      "The Game is a Draw!"
     else
-      false
+      "You Lost!"
     end
   end
 end
