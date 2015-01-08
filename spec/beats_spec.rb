@@ -18,7 +18,7 @@ describe('String#beats?') do
     expect("paper".beats?("paper")).to eq("The Game is a Draw!")
   end
 
-  it('returns "You Lost!" if scissors and rock is the argument') do
+  it('returns "You Lost!" if scissors is the object and rock is the argument') do
     expect("scissors".beats?("rock")).to eq("You Lost!")
   end
 end
